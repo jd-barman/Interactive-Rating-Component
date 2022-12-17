@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Interactive Rating Component made by Jaideep Barmman">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Interactive Rating Component</title>
+</head>
+<body>
+
+    <main>
+      <div class="container" data-card>
+
+        <div class="rating-state">
+          <div class="star-icon">
+            <img src="/images/icon-star.svg" width="17" height="16" alt="star">
+          </div>
+
+          <h1 class="title">How did we do?</h1>
+          <p class="details">Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!</p>
+
+          <div class="rating">
+            <button class="rating-icon" aria-label="rate 1 star" >1</button>
+            <button class="rating-icon" aria-label="rate 2 star" >2</button>
+            <button class="rating-icon" aria-label="rate 3 star" >3</button>
+            <button class="rating-icon" aria-label="rate 4 star" >4</button>
+            <button class="rating-icon" aria-label="rate 5 star" >5</button>
+          </div>
+          <button class="submit">Submit</button>
+        </div>
+
+        <div class="thanks-state hidden">
+          <img src="/images/illustration-thank-you.svg" width="162" height="108" alt="thanks" class="thanks">
+
+          <p class="rating-details">
+            You selected <span data-rating-value>5</span> out of 5
+          </p>
+
+          <h2 class="thanks-title">Thank you!</h2>
+          <p class="thanks-details">We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!</p>
+
+        </div>
+
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  <footer class="attribution">
+    Made with ❤️ by <a href="https://www.frontendmentor.io/profile/jd-barman">Jaideep Barman</a>
+  </footer>
+</body>
+</html>
